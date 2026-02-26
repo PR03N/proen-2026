@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --lightest: #f9e6e8;
+  /* Bem claro */
+  --lighter: #f4b8c0;
+  /* Claro */
+  --light: #e67582;
+  /* Um pouco claro */
+  --base: #bc1823;
+  /* Cor base */
+  --dark: #91191c;
+  /* Escuro */
+  --darker: #6a1215;
+  /* Mais escuro */
+  --darkest: #42090c;
+  /* Muito escuro */
+  --banner-big: 400px;
+  /* Tamanho do banner grande */
+  --banner-medium: 250px;
+  /* Tamanho do banner médio */
+  --banner-small: 200px;
+  /* Tamanho do banner pequeno */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* viewport height */
+}
+
+main {
+  flex: 1;
+}
+
+/* Header */
+.br-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  --header-logo-small: 24px;
+  --header-logo-medium: 32px;
+  --header-logo-large: 60px;
+}
+
+/* Main */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  height: var(--banner-small);
+  /* ou o tamanho que quiser */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-top {
+  border-style: solid;
+  border-color: var(--base);
+  border-width: 10px 10px 0 10px;
+}
+
+.banner-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-color: var(--base);
+  border-width: 0 10px 10px 10px;
+  border-radius: 3px;
+}
+
+.banner-bottom img {
+  border-radius: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-padding {
+  padding: 20px 2px;
+}
+
+.br-card {
+  width: 300px;
+  /* ou um valor fixo (ex: 300px) */
+  height: 420px;
+  /* ajusta automaticamente à altura do conteúdo */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* vertical */
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  /* garantir altura total se necessário */
+  gap: 20px;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  /* ou o tamanho que quiser */
+  object-fit: contain;
+}
+
+.card-text {
+  font-weight: normal;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  margin: 0;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* vertical */
+  align-items: center;
+  padding: 30px;
+  gap: 15px;
+  text-align: center;
+}
+
+.info-text {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.btn-text {
+  color: inherit;
+}
+
+/* Footer */
+.br-footer {
+  position: relative;
+  /* Para evitar que o footer fique fixo */
+  --background-light: var(--lightest);
+  margin-top: auto;
+}
+
+.instituition-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-link {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-ufsj {
+  max-height: 165px;
+  width: auto;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+
+.logo-seaca-proen {
+  max-height: 250px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+.br-accordion {
+  width: 100%;
+  max-width: 800px;
+  /* ou o tamanho que quiser */
+  margin: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .ufsj-link {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    height: var(--banner-medium);
+    /* ou o tamanho que quiser */
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .banner {
+    height: var(--banner-big);
+    /* ou o tamanho que quiser */
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+  width: 100%;
+}
+
+.div-test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: green;
+}
+
+.div-test img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #a3a3a3ff;
+  object-fit: cover;
+}
+
+.by-clalages {
+  padding: 0 .8rem .2rem;
+}

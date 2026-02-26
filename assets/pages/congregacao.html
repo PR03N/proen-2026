@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site da Pró-Reitoria de Ensino de Graduação da Universidade Federal de São João del-Rei (PROEN UFSJ)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@govbr-ds/core@3.6.1/dist/core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="https://ufsj.edu.br/temaversao5/imagens/ufsj-favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>UFSJ | Universidade Federal de São João del-Rei</title>
+</head>
+
+<body class="d-flex flex-column">
+    <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+        <ul id="menu-barra-temp" style="list-style:none;">
+            <li
+                style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+                <a target="_blank" href="http://brasil.gov.br"
+                    style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo
+                    Brasileiro</a>
+            </li>
+        </ul>
+    </div>
+    <script src="https://barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>
+
+    <header class="br-header large" data-sticky="data-sticky">
+        <div class="container-fluid">
+            <div class="header-bottom d-flex align-items-center justify-content-between">
+                <div class="header-menu">
+                    <div class="header-menu-trigger">
+                        <button id="menu-toggle" class="br-button small circle" type="button" aria-label="Menu"
+                            data-toggle="menu" data-target="#main-navigation">
+                            <i class="fas fa-bars" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="header-info">
+                        <a href="../../index.html" class="header-title">Pró-Reitoria de Ensino de Graduação</a>
+                        <div class="header-subtitle">Universidade Federal de São João del-Rei</div>
+                    </div>
+                </div>
+                <div class="logos-container d-flex align-items-center">
+                    <a href="../../index.html" class="mr-3">
+                        <img width="80" src="../images/logo_proen.png" alt="Logo PROEN">
+                    </a>
+                    <a href="../../index.html">
+                        <img width="100" src="../images/logo_ufsj.png" alt="Logo UFSJ">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="d-flex flex-fill p-3 p-lg-5" id="main">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+
+                <div class="br-menu push" id="main-navigation">
+                    <div class="menu-container">
+                        <div class="menu-panel">
+
+                            <div class="menu-header" data-visible="false">
+                                <div class="menu-title">
+                                    <img src="../images/govbr.svg" alt="Logo govbr">
+                                    <span>PROEN UFSJ</span>
+                                </div>
+                                <div class="menu-close">
+                                    <button class="br-button circle" type="button" aria-label="Fechar o menu"
+                                        data-dismiss="menu">
+                                        <i class="fas fa-times" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <nav class="menu-body" role="tree">
+                                <div class="menu-folder">
+                                    <a class="menu-item" href="javascript: void(0)" role="treeitem">
+                                        <span class="icon"><i class="fa-solid fa-building-columns"></i></span>
+                                        <span class="content">Institucional</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a class="menu-item" href="./contato.html">
+                                                <span class="icon">
+                                                    <i class="fas fa-phone" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="content">Contato</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item" href="./congregacao.html">
+                                                <span class="icon">
+                                                    <i class="fa-solid fa-users-between-lines"></i>
+                                                </span>
+                                                <span class="content">Congregação</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-folder">
+                                    <a class="menu-item" href="javascript: void(0)" role="treeitem">
+                                        <span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                                        <span class="content">Cursos de Graduação</span>
+                                    </a>
+                                    <ul>
+
+                                        <li>
+                                            <div class="menu-folder">
+                                                <a class="menu-item" href="javascript: void(0)" role="treeitem">
+                                                    <span class="icon"><i class="fa-solid fa-map-marker-alt"></i></span>
+                                                    <span class="content">São João del-Rei</span>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <div class="menu-folder">
+
+                                                            <a class="menu-item" href="javascript: void(0)"
+                                                                role="treeitem">
+                                                                <span class="icon"><i
+                                                                        class="fa-solid fa-university"></i></span>
+                                                                <span class="content">Campus Dom Bosco (CDB)</span>
+                                                            </a>
+                                                            <ul>
+                                                                <li><a class="menu-item"
+                                                                        href="https://www.ufsj.edu.br/cobit/"
+                                                                        target="_blank"><span
+                                                                            class="content">Biotecnologia</span></a>
+                                                                </li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cobio/"
+                                                                        target="_blank"><span class="content">Ciências
+                                                                            Biológicas
+                                                                            (Bacharelado)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cobio/"
+                                                                        target="_blank"><span class="content">Ciências
+                                                                            Biológicas
+                                                                            (Licenciatura)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cofil/"
+                                                                        target="_blank"><span class="content">Filosofia
+                                                                            (Bacharelado)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cofil/"
+                                                                        target="_blank"><span class="content">Filosofia
+                                                                            (Licenciatura)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cofis/"
+                                                                        target="_blank"><span class="content">Física
+                                                                            (Bacharelado)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cofis/"
+                                                                        target="_blank"><span class="content">Física
+                                                                            (Licenciatura)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cohis/"
+                                                                        target="_blank"><span class="content">História
+                                                                            (Bacharelado)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cohis/"
+                                                                        target="_blank"><span class="content">História
+                                                                            (Licenciatura)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/colet/"
+                                                                        target="_blank"><span class="content">Letras
+                                                                            (Licenciatura)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/colil/"
+                                                                        target="_blank"><span class="content">Letras -
+                                                                            Língua Inglesa
+                                                                            (Licenciatura)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cmedi/"
+                                                                        target="_blank"><span
+                                                                            class="content">Medicina</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/coped/"
+                                                                        target="_blank"><span
+                                                                            class="content">Pedagogia</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/copsi/"
+                                                                        target="_blank"><span
+                                                                            class="content">Psicologia</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/coqui/"
+                                                                        target="_blank"><span class="content">Química
+                                                                            (Bacharelado)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/coqui/"
+                                                                        target="_blank"><span class="content">Química
+                                                                            (Licenciatura)</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="menu-folder">
+                                                            <a class="menu-item" href="javascript: void(0)"
+                                                                role="treeitem">
+                                                                <span class="icon"><i
+                                                                        class="fa-solid fa-university"></i></span>
+                                                                <span class="content">Campus Santo Antônio (CSA)</span>
+                                                            </a>
+                                                            <ul>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/coene/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            de
+                                                                            Energia</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/coenp/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            de
+                                                                            Produção</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/coele/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            Elétrica</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/comec/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            Mecânica</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/comat/"
+                                                                        target="_blank"><span class="content">Matemática
+                                                                            (Bacharelado)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/comat/"
+                                                                        target="_blank"><span class="content">Matemática
+                                                                            (Licenciatura)</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="menu-folder">
+                                                            <a class="menu-item" href="javascript: void(0)"
+                                                                role="treeitem">
+                                                                <span class="icon"><i
+                                                                        class="fa-solid fa-university"></i></span>
+                                                                <span class="content">Campus Tancredo Neves
+                                                                    (CTAN)</span>
+                                                            </a>
+                                                            <ul>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/coadm/"
+                                                                        target="_blank"><span
+                                                                            class="content">Administração</span></a>
+                                                                </li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/arquitetura/"
+                                                                        target="_blank"><span
+                                                                            class="content">Arquitetura e
+                                                                            Urbanismo</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/artes/"
+                                                                        target="_blank"><span class="content">Artes
+                                                                            Aplicadas</span></a>
+                                                                </li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://sigaa.ufsj.edu.br/sigaa/public/curso/portal.jsf?id=16471979&lc=pt_BR&nivel=G"
+                                                                        target="_blank"><span class="content">Ciência da
+                                                                            Computação</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cocic/"
+                                                                        target="_blank"><span class="content">Ciências
+                                                                            Contábeis</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/coeco/"
+                                                                        target="_blank"><span class="content">Ciências
+                                                                            Econômicas</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/jornalismo/"
+                                                                        target="_blank"><span
+                                                                            class="content">Comunicação Social -
+                                                                            Jornalismo</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/coefi/"
+                                                                        target="_blank"><span class="content">Educação
+                                                                            Física
+                                                                            (Bacharelado)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/coefi/"
+                                                                        target="_blank"><span class="content">Educação
+                                                                            Física
+                                                                            (Licenciatura)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cogeo/"
+                                                                        target="_blank"><span class="content">Geografia
+                                                                            (Bacharelado)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cogeo/"
+                                                                        target="_blank"><span class="content">Geografia
+                                                                            (Licenciatura)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cmusi/"
+                                                                        target="_blank"><span class="content">Música
+                                                                            (Licenciatura)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/teatro/"
+                                                                        target="_blank"><span class="content">Teatro
+                                                                            (Bacharelado)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/teatro/"
+                                                                        target="_blank"><span class="content">Teatro
+                                                                            (Licenciatura)</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cozoo/"
+                                                                        target="_blank"><span
+                                                                            class="content">Zootecnia</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="menu-folder">
+                                                <a class="menu-item" href="javascript: void(0)" role="treeitem">
+                                                    <span class="icon"><i class="fa-solid fa-map-marker-alt"></i></span>
+                                                    <span class="content">Divinópolis</span>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <div class="menu-folder">
+                                                            <a class="menu-item" href="javascript: void(0)"
+                                                                role="treeitem">
+                                                                <span class="icon"><i
+                                                                        class="fa-solid fa-university"></i></span>
+                                                                <span class="content">Campus Centro-Oeste Dona Lindu
+                                                                    (CCO)</span>
+                                                            </a>
+                                                            <ul>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cobqi/"
+                                                                        target="_blank"><span
+                                                                            class="content">Bioquímica</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/coenf/"
+                                                                        target="_blank"><span
+                                                                            class="content">Enfermagem</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cofar/"
+                                                                        target="_blank"><span
+                                                                            class="content">Farmácia</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/comed/"
+                                                                        target="_blank"><span
+                                                                            class="content">Medicina</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="menu-folder">
+                                                <a class="menu-item" href="javascript: void(0)" role="treeitem">
+                                                    <span class="icon"><i class="fa-solid fa-map-marker-alt"></i></span>
+                                                    <span class="content">Ouro Branco</span>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <div class="menu-folder">
+                                                            <a class="menu-item" href="javascript: void(0)"
+                                                                role="treeitem">
+                                                                <span class="icon"><i
+                                                                        class="fa-solid fa-university"></i></span>
+                                                                <span class="content">Campus Alto Paraopeba (CAP)</span>
+                                                            </a>
+                                                            <ul>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/ccivi/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            Civil</span></a>
+                                                                </li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://cecia.ufsj.edu.br/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            da Computação e
+                                                                            Inteligência Artificial</span></a>
+                                                                </li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cbiop/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            de
+                                                                            Bioprocessos</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/ctele/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            de
+                                                                            Telecomunicações</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://www.ufsj.edu.br/cemec/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            Mecatrônica</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cquim/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            Química</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="menu-folder">
+                                                <a class="menu-item" href="javascript: void(0)" role="treeitem">
+                                                    <span class="icon"><i class="fa-solid fa-map-marker-alt"></i></span>
+                                                    <span class="content">Sete Lagoas</span>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <div class="menu-folder">
+                                                            <a class="menu-item" href="javascript: void(0)"
+                                                                role="treeitem">
+                                                                <span class="icon"><i
+                                                                        class="fa-solid fa-university"></i></span>
+                                                                <span class="content">Campus Sete Lagoas (CSL)</span>
+                                                            </a>
+                                                            <ul>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/ceagr/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            Agronômica</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/ceali/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            de
+                                                                            Alimentos</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/ceflo/"
+                                                                        target="_blank"><span class="content">Engenharia
+                                                                            Florestal</span></a></li>
+                                                                <li><a class="menu-item"
+                                                                        href="https://ufsj.edu.br/cobib/"
+                                                                        target="_blank"><span
+                                                                            class="content">Interdisciplinar em
+                                                                            Biossistemas</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-folder">
+                                    <a class="menu-item" href="javascript: void(0)" role="treeitem">
+                                        <span class="icon">
+                                            <i class="fas fa-briefcase"></i>
+                                        </span>
+                                        <span class="content">Portais</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a class="menu-item" href="./chefia.html">
+                                                <span class="icon">
+                                                    <i class="fas fa-file-invoice" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="content">Chefia de Departamento</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item" href="./coordenadoria.html">
+                                                <span class="icon">
+                                                    <i class="fas fa-file-invoice" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="content">Coordenadoria de Curso</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="menu-item divider" href="./egressos.html">
+                                    <span class="icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </span>
+                                    <span class="content">Egressos</span>
+                                </a>
+                                <a class="menu-item divider" href="../../mostra/index.html" target="_blank">
+                                    <span class="icon">
+                                        <i class="fas fa-book-bookmark"></i>
+                                    </span>
+                                    <span class="content">Mostra UFSJ</span>
+                                </a>
+                                <a class="menu-item divider" href="https://sisu.ufsj.edu.br" target="_blank">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-chalkboard-user"></i>
+                                    </span>
+                                    <span class="content">SiSU UFSJ</span>
+                                </a>
+                            </nav>
+
+                            <div class="menu-footer" data-visible="true">
+                                <div class="menu-links d-flex flex-column pl-3">
+                                    <a target="_blank" href="https://ufsj.edu.br/copeve/">
+                                        <span class="mr-1">COPEVE</span>
+                                        <i class="fas fa-external-link-square-alt" aria-hidden="true"></i>
+                                    </a>
+                                    <a target="_blank" href="http://dibib.ufsj.edu.br/wordpress/">
+                                        <span class="mr-1">DIBIB</span>
+                                        <i class="fas fa-external-link-square-alt" aria-hidden="true"></i>
+                                    </a>
+                                    <a target="_blank" href="https://ufsj.edu.br/dicon/">
+                                        <span class="mr-1">DICON</span>
+                                        <i class="fas fa-external-link-square-alt" aria-hidden="true"></i>
+                                    </a>
+                                    <a target="_blank" href="https://ufsj.edu.br/seaca/">
+                                        <span class="mr-1">SEACA</span>
+                                        <i class="fas fa-external-link-square-alt" aria-hidden="true"></i>
+                                    </a>
+                                    <a target="_blank" href="https://ufsj.edu.br/serle/">
+                                        <span class="mr-1">SERLE</span>
+                                        <i class="fas fa-external-link-square-alt" aria-hidden="true"></i>
+                                    </a>
+                                    <a target="_blank" href="https://ufsj.edu.br/sesta/">
+                                        <span class="mr-1">SESTA</span>
+                                        <i class="fas fa-external-link-square-alt" aria-hidden="true"></i>
+                                    </a>
+                                    <a target="_blank" href="https://ufsj.edu.br/setec/">
+                                        <span class="mr-1">SETEC</span>
+                                        <i class="fas fa-external-link-square-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="social-network">
+                                    <div class="social-network-title">Redes Sociais</div>
+                                    <div class="d-flex">
+                                        <a class="br-button circle" href="https://www.facebook.com/proenufsj/"
+                                            target="_blank" aria-label="Facebook da PROEN">
+                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                        </a>
+                                        <a class="br-button circle" href="https://www.instagram.com/proenufsj/"
+                                            aria-label="Instagram da PROEN" target="_blank">
+                                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu-info">
+                                    <div class="text-center text-down-01">© Universidade Federal de João
+                                        del-Rei.&nbsp;<strong>Todos os direitos reservados</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="main-content pl-lg-4 mt-4">
+                        <h3 class="mt-4">
+                            Acesse o <a
+                                href="https://ufsj.edu.br/portal2-repositorio/File/proen/Calendario_Reunioes_Congregacao_PROEN_2026_FINAL_feriados_recessos.docx">Calendário
+                                de Reuniões</a> da Congregação e da Câmara de Ensino - PROEN - 2026
+                        </h3>
+
+                        <h3>Regulamentação</h3>
+                        <div class="br-list" role="list">
+                            <div class="br-item" role="listitem">
+                                <div class="row align-items-center">
+                                    <div class="col-auto"><i class="fa-solid fa-circle"></i></div>
+                                    <div class="col">
+                                        <a href="https://sig.ufsj.edu.br/sigrh/public/colegiados/anexos/EstatutoDaUFSJ_UFSJ.pdf"
+                                            target="_blank">Art. 28 do Estatuto da UFSJ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="br-item" role="listitem">
+                                <div class="row align-items-center">
+                                    <div class="col-auto"><i class="fa-solid fa-circle"></i></div>
+                                    <div class="col">
+                                        <a href="https://sig.ufsj.edu.br/sigrh/public/colegiados/anexos/RegimentoGeralDaUFSJ_UFSJ.pdf"
+                                            target="_blank">Art. 33 a 36 do Regimento Geral da UFSJ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="br-item" role="listitem">
+                                <div class="row align-items-center">
+                                    <div class="col-auto"><i class="fa-solid fa-circle"></i></div>
+                                    <div class="col">
+                                        <a href="https://ufsj.edu.br/portal2-repositorio/File/proen/Res029Consu2007RegimentoCongregacao.pdf"
+                                            target="_blank">Resolução do CONSU Nº 029, de 10 de setembro de 2007 que
+                                            "Aprova Regimento Interno da Congregação"</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Atas e Convocações</h3>
+                        <!-- 
+                        ORIENTAÇÕES SOBRE LINKS DAS REUNIÕES
+                            Os links das Atas ficam disponível em SIPAC -> PROTOCOLO -> DOCUMENTOS -> CONSULTAR DOCUMENTO
+                            É possível baixar qualquer Ata que esteja disponível, porém, não encontrei a possibilidade de colocar esse link de download diretamente aqui
+                            Para conseguir gerar o link da forma que estou fazendo, subi os arquivos para o servidor dentro do Sysweb
+                            Para acessar o Sysweb, o NTInf deve liberar seu acesso e, para subir os arquivos, você deve:
+                                1 - Escolher qualquer página desejada na opção de "Alterar"
+                                2 - Clicar na opção "Inserir/Editar Link" dentro da caixa de conteúdo
+                                3 - Clicar no botão "Localizar no servidor"
+                                4 - Selecionar a opção de "Enviar arquivo"
+                                5 - Escolha o arquivo desejado e adicione-o
+                                6 - Esse link ficará disponível para uso, no mesmo formato encontrado nos links daqui
+                        -->
+                        <div class="table-responsive mb-5">
+                            <div class="br-table large" title="Reuniões">
+                                <table>
+                                    <thead class="border-bottom border-left border-right border-top">
+                                        <tr>
+                                            <th class="text-weight-extra-bold text-up-02" scope="col">Reunião</th>
+                                            <th class="text-weight-extra-bold text-up-02" scope="col">Data</th>
+                                            <th class="text-weight-extra-bold text-up-02" scope="col">Ata</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="border-left border-right border-bottom">
+                                        <tr>
+                                            <td class="border-right">73ª REUNIÃO ORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">16/10/2025</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ATA_73_REUNIAO_CONGREGACAO_PROEN_UFSJ.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">72ª REUNIÃO ORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">18/09/2025</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ATA_72_REUNIAO_CONGREGACAO_PROEN_UFSJ.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">71ª REUNIÃO ORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">21/08/2025</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ATA_71_REUNIAO_CONGREGACAO_PROEN_UFSJ.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">70ª REUNIÃO ORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">22/05/2025</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ATA_70_REUNIAO_CONGREGACAO_PROEN_UFSJ.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">69ª REUNIÃO ORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">15/05/2025</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ATA_69_REUNIAO_CONGREGACAO_PROEN_UFSJ.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">68ª REUNIÃO ORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">24/04/2025</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ATA_68_REUNIAO_CONGREGACAO_PROEN_UFSJ.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">REUNIÃO (sem quórum)</td>
+                                            <td class="border-right">10/04/2025</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ATA_REUNIAO_CONGREGACAO_PROEN_UFSJ.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="border-right">67ª REUNIÃO EXTRAORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">06/02/2025</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ATA_67_REUNIAO_CONGREGACAO_PROEN_UFSJ.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="border-right">66ª REUNIÃO EXTRAORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">28/11/2024</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ATA_66_REUNIO_EXTRAORDINRIA_DA_CONGREGAO_PROEN_UFSJ.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="border-right">65ª REUNIÃO ORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">17/10/2024</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ATA_65_REUNIO_ORDINRIA_DA_CONGREGAO_DA_PROEN_UFSJ.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">64ª REUNIÃO EXTRAORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">24/09/2024</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ATA__64_REUNIO_EXTRAORDINRIA_DA_CONGREGAO_-_PROEN_UFSJ.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">63ª REUNIÃO EXTRAORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">18/04/2024</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/Ata_da_63_Reunio_Extrordinria__18_04_24.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">62ª REUNIÃO EXTRAORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">07/12/2023</td>
+                                            <td>Não há Ata</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">61ª REUNIÃO EXTRAORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">Sem data</td>
+                                            <td>Não há Ata</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">60ª REUNIÃO EXTRAORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">14/02/2023</td>
+                                            <td>Não há Ata</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">59ª REUNIÃO EXTRAORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">Sem data</td>
+                                            <td>Não há Ata</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-right">58ª REUNIÃO EXTRAORDINÁRIA DA CONGREGAÇÃO</td>
+                                            <td class="border-right">02/06/2023</td>
+                                            <td><a href="https://ufsj.edu.br/portal2-repositorio/File/proen/ata_58_congregao_22_06_23_final.pdf"
+                                                    target="_blank">Acessar Ata</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="br-footer inverted">
+        <div class="container-lg">
+            <div class="logo text-sm-left mb-4" inverted="inverted">
+                <img src="../images/govbr.svg" alt="Logo govbr">
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-6 col-lg-2 mb-3">
+                    <a class="br-item" href="./contato.html">Contato</a>
+                    <a class="br-item" href="./congregacao.html">Congregação</a>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <a class="br-item" href="./chefia.html">Chefia</a>
+                    <a class="br-item" href="./coordenadoria.html">Coordenadoria</a>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <a class="br-item" href="./egressos.html">Egressos</a>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <a class="br-item" href="./mostra/index.html" target="_blank">Mostra UFSJ</a>
+                </div>
+            </div>
+
+        </div>
+
+        <span class="br-divider my-3"></span>
+
+        <div class="info text-center pb-3">
+            <div class="text-down-01">© Universidade Federal de São João del-Rei. <strong>Todos os direitos
+                    reservados</strong></div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@govbr-ds/core@3.6.1/dist/core.min.js"></script>
+    <script type="module" src="../js/script.js"></script>
+</body>
+
+</html>
