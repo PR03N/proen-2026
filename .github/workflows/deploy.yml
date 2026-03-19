@@ -24,5 +24,6 @@ jobs:
           ignore: | # Arquivos que serão ignorados no upload
             *.git
             */**/*git*
+            *.github
             README.md
             .sftp_upload_action_hashes
