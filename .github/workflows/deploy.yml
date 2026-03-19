@@ -21,6 +21,6 @@ jobs:
           port: 32001
           localDir: '.'
           remoteDir: '/upload'
-          exclude: '.git,.github,README.md' # Arquivos que serão ignorados no upload
+          exclude: ".git/,.github/,.sftp_upload_action_hashes,README.md" # Arquivos que serão ignorados no upload
           # Força a criação da pasta remota caso ela não exista por algum motivo
           forceUpload: true
