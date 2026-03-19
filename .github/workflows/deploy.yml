@@ -22,7 +22,7 @@ jobs:
           uploads: |
             ./ => /upload/
           ignore: | # Arquivos que serão ignorados no upload
-            .git/
-            .github/
+            *.git
+            */**/*git*
             README.md
-            .sftp_upload_action_hashes # Arquivos que serão ignorados no upload
+            .sftp_upload_action_hashes
