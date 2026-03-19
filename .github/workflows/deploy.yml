@@ -1,0 +1,29 @@
+name: Deploy Estatico UFSJ
+
+on:
+  push:
+    branches:
+      - main # Branch principal
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Pegando os arquivos do repositório
+        uses: actions/checkout@v4
+
+      - name: 🚀 Enviando via SFTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.SFTP_USER }}
+          password: ${{ secrets.SFTP_PWD }}
+          protocol: sftp
+          port: 32001 # Porta do servidor
+          local-dir: ./ # O ponto '.' indica que o robô vai enviar TUDO que está na raiz do seu projeto
+          server-dir: /upload/
+          # Arquivos para ignorar (não enviar para o servidor)
+          exclude: |
+            **/.git*
+            **/.github*
+            **/README.md
