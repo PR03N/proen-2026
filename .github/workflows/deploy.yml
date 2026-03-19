@@ -19,8 +19,8 @@ jobs:
           username: ${{ secrets.SFTP_USER }}
           password: ${{ secrets.SFTP_PWD }}
           port: 32001
-          localDir: './'
-          remoteDir: '/upload/'
+          localDir: '.'
+          remoteDir: '/upload'
           exclude: '.git,.github,README.md' # Arquivos que serão ignorados no upload
           # Força a criação da pasta remota caso ela não exista por algum motivo
           forceUpload: true
