@@ -21,11 +21,8 @@ jobs:
           port: 32001
           uploads: |
             ./ => /upload/
-          remoteDir: '/upload'
           ignore: | # Arquivos que serão ignorados no upload
             .git/
             .github/
             README.md
             .sftp_upload_action_hashes # Arquivos que serão ignorados no upload
-          # Força a criação da pasta remota caso ela não exista por algum motivo
-          forceUpload: true
